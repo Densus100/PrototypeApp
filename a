@@ -1,0 +1,26 @@
+<ImageHeaderScrollView
+
+                headerImage={Wonder.image[id]}
+                renderForeground={() => (
+                    <>
+                        <View />
+                        <TouchableOpacity
+                            style={{
+                                width: width,
+                                position: 'absolute',
+                                textAlign: 'center',
+                                backgroundColor: 'rgba(0, 0, 0, 0.45)',
+                                bottom: 0,
+                            }}
+                            onPress={() => console.log("tap!!")}>
+                            <Text style={{
+                                color: 'white',
+                                fontSize: 18,
+                                fontWeight: "bold",
+                                marginBottom: 5,
+                                color: 'white'
+                            }}>{item.title}</Text>
+                        </TouchableOpacity>
+                    </>
+
+                )}>
